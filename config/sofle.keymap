@@ -39,8 +39,8 @@
 // |       |  =  |  -  |  +   |  {   |  }   |        |  |       |  [   |  ]    |  ;    |  :   |   \   |       |
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
-&F11      &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                    &kp F6    &kp F7   &kp F8          &kp F9    &kp F10   &kp F11
-&F12      &kp LS(GRAVE)    &kp N7    &kp N8      &kp N9   &kp k_CALC          &kp N6    &kp N7   &kp N8          &kp N9    &kp N0    &kp F12
+&kp F11      &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                    &kp F6    &kp F7   &kp F8          &kp F9    &kp F10   &kp F11
+&kp F12      &kp LS(GRAVE)    &kp N7    &kp N8      &kp N9   &kp k_CALC          &kp N6    &kp N7   &kp N8          &kp N9    &kp N0    &kp F12
 &trans    &kp SLASH &kp N4    &kp N5    &kp D6  &kp MULTIPLY                  &kp CARET &kp AMPS &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp PIPE
 &trans    &kp MINUS &kp N1    &kp N2    &kp N3  &kp PLUS      &trans   &trans &kp LBKT  &kp RBKT &kp SEMI        &kp COLON &kp BSLH  &trans
                     &kp DOT   &kp N0    &trans    &trans      &trans   &trans &trans    &trans   &trans          &trans
@@ -58,10 +58,10 @@
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &trans    &trans    &trans   &trans    &trans  &trans
-&trans     &kp LS(GRAVE)      &kp HOME    &kp UP  &cp END       &kp PG_UP               &kp SQT   &kp HOME  &kp RET  &END      &kp BSHL  &trans
+&trans     &kp LS(GRAVE)      &kp HOME    &kp UP  &kp END       &kp PG_UP               &kp SQT   &kp HOME  &kp RET  &kp END      &kp BSHL  &trans
 &trans     &kp ESC     &kp LEFT    &kp DOWN    &kp RIGHT       &kp PG_DN                &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &kp COLON &trans
-&trans     &kp GRAVE   &kp DEL   &kp RET   &kp LC(LEFT)  &kp LC(RIGHT)  &trans  &trans  &kp N0    &LS(LBRC) &kp LS(RBRC)   &kp LS(N9)    &kp LS(N10)  &trans
-                        &kp F2       &LA(U)       &trans       &trans  &trans   &trans  &trans    &trans    &kp LBRC   &kp RBRC
+&trans     &kp GRAVE   &kp DEL   &kp RET   &kp LC(LEFT)  &kp LC(RIGHT)  &trans  &trans  &kp N0    &cp LS(LBRC) &kp LS(RBRC)   &kp LS(N9)    &kp LS(N10)  &trans
+                        &kp F2       &cp LA(U)       &trans       &trans  &trans   &trans  &trans    &trans    &kp LBRC   &kp RBRC
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
