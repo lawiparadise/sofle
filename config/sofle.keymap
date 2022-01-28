@@ -10,7 +10,6 @@
 
 / {
     &lt {
-        retro-tap;
         quick-tap-ms = <200>;
     };
     keymap {
