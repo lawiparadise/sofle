@@ -23,7 +23,7 @@
 	lh_pht: left_hand_positional_hold_tap {
 	    compatible = "zmk,behavior-hold-tap";
 	    label = "POSITIONAL_HOLD_TAP2";
-	    #binding-cells = <3>;
+	    #binding-cells = <2>;
 	    flavor = "tap-unless-interrupted";
 	    tapping-term-ms = <100>;
 	    quick-tap-ms = <200>;
