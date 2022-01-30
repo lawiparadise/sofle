@@ -37,7 +37,25 @@
 	    tapping-term-ms = <100>;
 	    quick-tap-ms = <200>;
 	    bindings = <&kp>, <&kp>;
-//	    hold-trigger-key-positions = <5 6 7 8 9 10>;
+	    hold-trigger-key-positions = <5 6 7 8 9 10>;
+	};
+	hm: homerow_mods {
+	    compatible = "zmk,behavior-hold-tap";
+	    label = "HOMEROW_MODS";
+	    #binding-cells = <2>;
+	    tapping-term-ms = <150>;
+	    quick-tap-ms = <0>;
+	    flavor = "tap-preferred";
+	    bindings = <&kp>, <&kp>;
+	};
+	bhm: balanced_homerow_mods{
+	    compatible = "zmk,behavior-hold-tap";
+	    label = "HOMEROW_MODS";
+	    #binding-cells = <2>;
+	    tapping-term-ms = <200>;
+	    quick-tap-ms = <0>;
+	    flavor = "balanced";
+	    bindings = <&kp>, <&kp>;
 	};
     };
 
@@ -55,7 +73,7 @@
 &kp GRAVE &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                             &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &none
 &kp TAB   &pht LEFT_SHIFT Q  &kp W    &kp E    &kp R     &kp T                              &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSPC
 &kp CAPS  &lh_pht LEFT_SHIFT A  &kp S    &kp D    &kp F     &kp G                              &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
-&kp LSHFT &kp Z  &kp X    &kp C    &kp V     &kp B  &kp C_MUTE           &none  &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+&kp LSHFT &hm LSHIFT Z  &bhm LSHIFT X    &kp C    &kp V     &kp B  &kp C_MUTE           &none  &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
                  &kp TAB  &kp LGUI &mt LALT BSPC &lt 1 SPACE &lt 2 RET   &kp RET    &lt 2 SPACE &lt 1 LANG1  &kp MINUS &kp EQUAL
             >;
 
