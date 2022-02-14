@@ -10,12 +10,12 @@
 
 &mt {
 	quick-tap-ms = <200>;
-	tapping-term-ms = <80>;
+//	tapping-term-ms = <80>;
 };
 
 &lt {
 	quick-tap-ms = <200>;
-	tapping-term-ms = <80>;
+//	tapping-term-ms = <80>;
 };
 
 / {
@@ -71,11 +71,11 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
             bindings = <
-&kp GRAVE &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                             &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &none
+&kp ESC   &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                             &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &none
 &kp TAB   &kp Q  &kp W    &kp E    &kp R     &kp T                              &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSPC
 &kp CAPS  &kp A  &kp S    &kp D    &kp F     &kp G                              &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
 &kp LSHFT &kp Z  &kp X    &kp C    &kp V     &kp B  &kp C_MUTE           &none  &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-                 &kp TAB  &kp LGUI &mt LALT BSPC &lt 1 SPACE &lt 2 RET   &kp RET    &lt 2 SPACE &lt 1 LANG1  &kp MINUS &kp EQUAL
+                 &kp TAB  &kp LGUI &mt LCTRL BSPC &lt 1 SPACE &lt 2 RET   &kp RET    &lt 2 SPACE &lt 1 LANG1  &kp MINUS &kp EQUAL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -112,7 +112,7 @@
 &trans     &kp LS(GRAVE)      &kp HOME    &kp UP  &kp END       &kp PG_UP               &kp SQT   &kp HOME  &kp RET  &kp END      &kp BSLH  &trans
 &trans     &kp ESC     &kp LEFT    &kp DOWN    &kp RIGHT       &kp PG_DN                &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &kp COLON &trans
 &trans     &kp GRAVE   &kp DEL   &kp RET   &kp LC(LEFT)  &kp LC(RIGHT)  &trans  &trans  &kp N0    &kp LS(LBKT) &kp LS(RBKT)   &kp LS(N9)    &kp LS(N0)  &trans
-                        &kp F2       &kp LA(U)       &trans       &trans  &trans   &trans  &trans    &trans    &kp LBKT   &kp RBKT
+                        &kp F2       &kp LC(U)       &trans       &trans  &trans   &trans  &trans    &trans    &kp LBKT   &kp RBKT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
