@@ -19,6 +19,12 @@ jobs:
           matrix=$(yaml2json build.yaml | jq -c .)
           yaml2json build.yaml
           echo "::set-output name=matrix::${matrix}"
+      - name: Setup cmake
+        uses: jwlawson/actions-setup-cmake@v1.13
+        with:
+          cmake-version: '3.20.0'
+      - name: Use cmake
+        run: cmake --version
   build:
     runs-on: ubuntu-latest
     container:
