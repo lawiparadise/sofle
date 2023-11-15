@@ -83,11 +83,13 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp KP_N1>
+                = <&macro_wait_time 15>
+                , <&macro_tap &kp KP_N1>
                 , <&macro_tap &kp F6 &kp N3 &kp N1 &kp N5>
-                , <&macro_wait_time 2500>
+                , <&macro_wait_time 1500>
                 , <&macro_tap &kp N2>
                 , <&macro_tap &kp KP_N2>
+                , <&macro_wait_time 15>
                 ;
         };
     };
