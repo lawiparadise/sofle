@@ -84,7 +84,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp KP_N1 &kp F6 &kp N3 &kp N1 &kp N5 &kp N2>
-                , <&delay 2500>
+                , <&wait 2500>
                 , <&macro_tap &kp KP_N2>
                 ;
         };
